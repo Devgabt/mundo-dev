@@ -1,6 +1,6 @@
 # 🌐 Projeto de Busca de Tecnologias 
 
-Este projeto foi desenvolvido para participar da premiação dos melhores projetos da **Imersão Alura com Gemini**. A aplicação permite aos usuários pesquisar informações detalhadas sobre diversas tecnologias, exibindo curiosidades, exemplos de aplicação e links para documentações relevantes.
+Este projeto foi desenvolvido para participar da premiação dos projetos mais criativos da **Imersão Alura com Gemini**. A aplicação permite aos usuários pesquisar informações detalhadas sobre diversas tecnologias, exibindo curiosidades, exemplos de aplicação e links para documentações relevantes.
 
 ## 🏆 Sobre o Projeto
 
