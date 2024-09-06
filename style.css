@@ -1,10 +1,7 @@
-/* Importa a fonte Chakra Petch do Google Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
-
-/* Estiliza o corpo da página */
+/* Estilos globais */
 body {
   font-family: "Chakra Petch", sans-serif; /* Define a fonte padrão */
-  background-color: #e0f2fe; /* Azul muito claro e suave */
+  background-color: #e0f2fe; /* Cor de fundo azul muito claro */
   display: flex; /* Usa Flexbox para layout */
   flex-direction: column; /* Alinha os itens na vertical */
   align-items: center; /* Centraliza os itens horizontalmente */
@@ -14,15 +11,15 @@ body {
   padding: 0; /* Remove o padding padrão do body */
 }
 
-/* Estiliza os títulos h1 */
+/* Estilos para cabeçalhos */
 h1 {
   font-size: 2.5rem; /* Tamanho da fonte */
-  color: #1e40af; /* Azul escuro intenso */
+  color: #1e40af; /* Cor do texto azul escuro intenso */
   text-align: center; /* Alinha o texto ao centro */
   letter-spacing: 0.4rem; /* Espaçamento entre letras */
 }
 
-/* Estiliza as seções da página */
+/* Estilos para seções */
 section {
   display: flex; /* Usa Flexbox para layout */
   flex-direction: column; /* Alinha os itens na vertical */
@@ -30,31 +27,31 @@ section {
   margin-bottom: 3rem; /* Espaçamento abaixo de cada seção */
 }
 
-/* Estiliza os inputs dentro das seções */
+/* Estilos para inputs */
 section input {
   width: 30rem; /* Largura dos inputs */
   border: none; /* Remove a borda padrão */
   padding: 1rem; /* Espaçamento interno */
   border-radius: 1.5rem; /* Borda arredondada */
   margin-bottom: 1rem; /* Espaçamento abaixo dos inputs */
-  color: #1e3a8a; /* Azul escuro para contraste */
+  color: #1e3a8a; /* Cor do texto azul escuro para contraste */
   font-size: 1rem; /* Tamanho da fonte */
   box-sizing: border-box; /* Inclui padding e border na largura total */
-  background-color: #bfdbfe; /* Azul claro */
+  background-color: #bfdbfe; /* Cor de fundo azul claro */
 }
 
-/* Estiliza os botões dentro das seções */
+/* Estilos para botões */
 section button {
   padding: 0.8rem 1.2rem; /* Espaçamento interno do botão */
   border: none; /* Remove a borda padrão */
   border-radius: 1.5rem; /* Borda arredondada */
-  background-color: #2563eb; /* Azul médio */
-  color: #f0f9ff; /* Branco azulado para contraste */
+  background-color: #2563eb; /* Cor de fundo azul médio */
+  color: #f0f9ff; /* Cor do texto branco azulado para contraste */
   font-size: 1rem; /* Tamanho da fonte */
   cursor: pointer; /* Muda o cursor para indicar que é clicável */
 }
 
-/* Estiliza a caixa de resultados da pesquisa */
+/* Estilos para resultados de pesquisa */
 .resultados-pesquisa {
   width: 60rem; /* Largura máxima da caixa de resultados */
   height: 46vh; /* Altura máxima da caixa de resultados */
@@ -64,9 +61,9 @@ section button {
   border-radius: 0.6rem; /* Borda arredondada */
 }
 
-/* Estiliza cada item de resultado */
+/* Estilos para itens de resultado */
 .item-resultado {
-  background: #93c5fd; /* Azul médio */
+  background: #93c5fd; /* Cor de fundo azul médio */
   border-radius: 0.6rem; /* Borda arredondada */
   padding: 2rem; /* Espaçamento interno */
   margin-bottom: 1rem; /* Espaçamento abaixo dos itens */
@@ -76,43 +73,80 @@ section button {
   transition: opacity 0.5s ease, transform 0.5s ease; /* Transição suave ao aparecer */
 }
 
-/* Estiliza o estado visível dos itens de resultado */
+/* Estado visível dos itens de resultado */
 .item-resultado.visivel {
   opacity: 1; /* Torna o item visível */
   transform: translateY(0); /* Move o item para a posição original */
 }
 
-/* Estiliza os títulos dentro dos itens de resultado */
+/* Estilos para títulos e links dentro dos itens de resultado */
 .item-resultado h2 {
   font-size: 1.5rem; /* Tamanho da fonte */
-  color: #f0f9ff; /* Branco azulado */
+  color: #f0f9ff; /* Cor do texto branco azulado */
 }
 
-/* Estiliza os links dentro dos itens de resultado */
 .item-resultado a {
   text-decoration: none; /* Remove o sublinhado padrão dos links */
-  color: #2563eb; /* Azul para links */
+  color: #2563eb; /* Cor azul para links */
 }
 
-/* Estiliza os links quando são passados o mouse sobre */
 .item-resultado a:hover {
   text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
 }
 
-/* Estiliza a descrição meta dentro dos itens de resultado */
+/* Estilos para descrição meta */
 .descricao-meta {
-  color: #1e3a8a; /* Azul escuro */
+  color: #1e3a8a; /* Cor do texto azul escuro */
   margin: 0.5rem 0; /* Margem acima e abaixo */
 }
 
-/* Estiliza o rodapé da página */
+/* Estilos para rodapé */
 footer {
-  background-color: #2563eb; /* Azul médio do rodapé */
-  color: #f0f9ff; /* Branco azulado */
+  background-color: #2563eb; /* Cor de fundo azul médio do rodapé */
+  color: #f0f9ff; /* Cor do texto branco azulado */
   text-align: center; /* Alinha o texto ao centro */
   padding: 0; /* Remove o espaçamento interno */
   width: 100%; /* Largura total da página */
   position: absolute; /* Posiciona o rodapé */
   bottom: 0; /* Alinha ao fundo da página */
   font-size: 1rem; /* Tamanho da fonte */
+}
+
+/* Media Queries para responsividade */
+
+/* Estilos para dispositivos com largura máxima de 768px (tablets e telas menores) */
+@media (max-width: 768px) {
+  section input, .resultados-pesquisa {
+    width: 90%; /* Ajusta a largura dos inputs e resultados para 90% da largura da tela */
+  }
+
+  h1 {
+    font-size: 2rem; /* Reduz o tamanho da fonte do título */
+    letter-spacing: 0.2rem; /* Reduz o espaçamento entre letras */
+  }
+
+  .item-resultado {
+    padding: 1.5rem; /* Ajusta o padding dos itens de resultado */
+  }
+}
+
+/* Estilos para dispositivos com largura máxima de 480px (smartphones e telas muito pequenas) */
+@media (max-width: 480px) {
+  section input, .resultados-pesquisa {
+    width: 100%; /* Ajusta a largura dos inputs e resultados para 100% da largura da tela */
+  }
+
+  h1 {
+    font-size: 1.5rem; /* Reduz ainda mais o tamanho da fonte do título */
+    letter-spacing: 0.1rem; /* Reduz ainda mais o espaçamento entre letras */
+  }
+
+  section button {
+    width: 100%; /* Ajusta a largura dos botões para 100% da largura da tela */
+    padding: 1rem; /* Ajusta o padding dos botões */
+  }
+
+  .item-resultado {
+    padding: 1rem; /* Ajusta o padding dos itens de resultado */
+  }
 }
